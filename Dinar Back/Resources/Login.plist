@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>email</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Email Address</string>
+		<key>emptyPlaceholder</key>
+		<string>Please enter a valid Email Address.</string>
+		<key>invalidPlaceholder</key>
+		<string>Please enter a valid Email Address.</string>
+	</dict>
+	<key>password</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Password</string>
+		<key>emptyPlaceholder</key>
+		<string>Please enter your password.</string>
+		<key>invalidPlaceholder</key>
+		<string>Password must meet requirements.</string>
+	</dict>
+	<key>bar_code</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Product Barcode Number</string>
+		<key>emptyPlaceholder</key>
+		<string>Bar Code must be longer than 1 letter.</string>
+		<key>invalidPlaceholder</key>
+		<string>Bar Code must be longer than 1 letter.</string>
+	</dict>
+	<key>first_name</key>
+	<dict>
+		<key>placeholder</key>
+		<string>First Name</string>
+		<key>emptyPlaceholder</key>
+		<string>First Name must be longer than 1 letter.</string>
+		<key>invalidPlaceholder</key>
+		<string>First Name must be longer than 1 letter.</string>
+	</dict>
+	<key>last_name</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Last Name</string>
+		<key>emptyPlaceholder</key>
+		<string>Last Name must be longer than 1 letter.</string>
+		<key>invalidPlaceholder</key>
+		<string>Last Name must be longer than 1 letter.</string>
+	</dict>
+	<key>zip_code</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Zip Code</string>
+		<key>emptyPlaceholder</key>
+		<string>Please enter a valid Zip Code.</string>
+		<key>invalidPlaceholder</key>
+		<string>Please enter a valid Zip Code.</string>
+	</dict>
+	<key>dob</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Date of Birth</string>
+		<key>emptyPlaceholder</key>
+		<string>Date of Birth</string>
+		<key>invalidPlaceholder</key>
+		<string>You must be at least ten years old.</string>
+	</dict>
+	<key>gender</key>
+	<dict>
+		<key>placeholder</key>
+		<string>Gender (optional)</string>
+		<key>optional</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

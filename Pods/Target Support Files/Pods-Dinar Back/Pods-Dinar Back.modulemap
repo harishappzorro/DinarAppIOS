@@ -1,0 +1,6 @@
+framework module Pods_Dinar_Back {
+  umbrella header "Pods-Dinar Back-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCollectionViewCell" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="Dinar_Back" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaN-Fk-c4i">
+                        <rect key="frame" x="5" y="5" width="110" height="85"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" verifyAmbiguity="off" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="demoProduct" translatesAutoresizingMaskIntoConstraints="NO" id="qro-vv-Xo6" customClass="AsyncImageView">
+                                <rect key="frame" x="3" y="3" width="104" height="79"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.92156862745098034" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qro-vv-Xo6" firstAttribute="leading" secondItem="aaN-Fk-c4i" secondAttribute="leading" constant="3" id="FMZ-wx-Ufu"/>
+                            <constraint firstAttribute="width" secondItem="aaN-Fk-c4i" secondAttribute="height" multiplier="22:17" priority="750" id="XiP-ES-QsJ"/>
+                            <constraint firstAttribute="bottom" secondItem="qro-vv-Xo6" secondAttribute="bottom" constant="3" id="ebX-8T-6Bh"/>
+                            <constraint firstAttribute="trailing" secondItem="qro-vv-Xo6" secondAttribute="trailing" constant="3" id="goA-Re-jYa"/>
+                            <constraint firstItem="qro-vv-Xo6" firstAttribute="top" secondItem="aaN-Fk-c4i" secondAttribute="top" constant="3" id="ib7-Ep-4bJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="$3.00 cash back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-9Z-956">
+                        <rect key="frame" x="5" y="88" width="110" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="utG-aF-QLR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
+                        <color key="textColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busch®, Natural OR Rolling Rock..." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0nk-Pe-XSo">
+                        <rect key="frame" x="5" y="110.5" width="77" height="49.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                        <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gru-Ws-5Fn">
+                        <rect key="frame" x="85" y="117" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="5Rk-UM-dVT"/>
+                            <constraint firstAttribute="height" constant="30" id="6eD-Ty-QCL"/>
+                        </constraints>
+                        <state key="normal" image="btnPlusFlamingoLarge"/>
+                        <state key="selected" image="btnCheckBlowholeLarge"/>
+                        <connections>
+                            <action selector="addToMyRebates:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fdc-hM-XQc"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Gru-Ws-5Fn" secondAttribute="bottom" constant="13" id="1Qe-3C-2Fj"/>
+                <constraint firstItem="0nk-Pe-XSo" firstAttribute="top" secondItem="fnC-9Z-956" secondAttribute="bottom" constant="1.5" id="1Tb-WY-a4S"/>
+                <constraint firstAttribute="trailing" secondItem="Gru-Ws-5Fn" secondAttribute="trailing" constant="5" id="47Z-Z9-MlI"/>
+                <constraint firstItem="aaN-Fk-c4i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="E0I-c2-Mqx"/>
+                <constraint firstItem="0nk-Pe-XSo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PjC-Fe-KZQ"/>
+                <constraint firstItem="fnC-9Z-956" firstAttribute="top" secondItem="aaN-Fk-c4i" secondAttribute="bottom" constant="-2" id="Zl4-ml-zQk"/>
+                <constraint firstItem="Gru-Ws-5Fn" firstAttribute="leading" secondItem="0nk-Pe-XSo" secondAttribute="trailing" constant="3" id="a5B-x9-8gP"/>
+                <constraint firstAttribute="bottom" secondItem="0nk-Pe-XSo" secondAttribute="bottom" id="be6-gs-2E2"/>
+                <constraint firstItem="fnC-9Z-956" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="c6K-XF-2Yw"/>
+                <constraint firstAttribute="trailing" secondItem="fnC-9Z-956" secondAttribute="trailing" constant="5" id="eiE-xS-xo0"/>
+                <constraint firstItem="aaN-Fk-c4i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="nmM-rw-yET"/>
+                <constraint firstAttribute="trailing" secondItem="aaN-Fk-c4i" secondAttribute="trailing" constant="5" id="qJe-Au-Pey"/>
+            </constraints>
+            <size key="customSize" width="241" height="192"/>
+            <connections>
+                <outlet property="addToMyRebateButton" destination="Gru-Ws-5Fn" id="OPi-jy-4cf"/>
+                <outlet property="cashBackLabel" destination="fnC-9Z-956" id="weG-Ww-V67"/>
+                <outlet property="descriptionLabel" destination="0nk-Pe-XSo" id="ogS-ir-ixY"/>
+                <outlet property="logoContainer" destination="aaN-Fk-c4i" id="Rkv-Na-dVY"/>
+                <outlet property="logoImageView" destination="qro-vv-Xo6" id="7wE-hJ-rlU"/>
+            </connections>
+            <point key="canvasLocation" x="129" y="139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btnCheckBlowholeLarge" width="36" height="36"/>
+        <image name="btnPlusFlamingoLarge" width="38" height="38"/>
+        <image name="demoProduct" width="167" height="285"/>
+    </resources>
+</document>

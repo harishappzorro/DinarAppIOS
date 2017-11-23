@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GiftCardCollectionViewCell" id="gTV-IL-0wX" customClass="GiftCardCollectionViewCell" customModule="Dinar_Back" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaN-Fk-c4i">
+                        <rect key="frame" x="5" y="5" width="150" height="100"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" verifyAmbiguity="off" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="demoProduct" translatesAutoresizingMaskIntoConstraints="NO" id="qro-vv-Xo6" customClass="AsyncImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.92156862745098034" blue="0.95294117647058818" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qro-vv-Xo6" firstAttribute="leading" secondItem="aaN-Fk-c4i" secondAttribute="leading" id="FMZ-wx-Ufu"/>
+                            <constraint firstAttribute="width" secondItem="aaN-Fk-c4i" secondAttribute="height" multiplier="22:17" priority="750" constant="20.588235294117652" id="XiP-ES-QsJ"/>
+                            <constraint firstAttribute="bottom" secondItem="qro-vv-Xo6" secondAttribute="bottom" id="ebX-8T-6Bh"/>
+                            <constraint firstAttribute="trailing" secondItem="qro-vv-Xo6" secondAttribute="trailing" id="goA-Re-jYa"/>
+                            <constraint firstItem="qro-vv-Xo6" firstAttribute="top" secondItem="aaN-Fk-c4i" secondAttribute="top" id="ib7-Ep-4bJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Amazon.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-9Z-956">
+                        <rect key="frame" x="5" y="112" width="150" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="utG-aF-QLR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$20.00 minimum" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0nk-Pe-XSo">
+                        <rect key="frame" x="5" y="124.5" width="150" height="15"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="11"/>
+                        <color key="textColor" red="0.58039215686274503" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fnC-9Z-956" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8xN-jv-3i9"/>
+                <constraint firstItem="0nk-Pe-XSo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="B7b-zY-psa"/>
+                <constraint firstItem="aaN-Fk-c4i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="E0I-c2-Mqx"/>
+                <constraint firstAttribute="bottom" secondItem="fnC-9Z-956" secondAttribute="bottom" constant="13" id="GJi-Sv-A5X"/>
+                <constraint firstItem="0nk-Pe-XSo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="PjC-Fe-KZQ"/>
+                <constraint firstAttribute="bottom" secondItem="0nk-Pe-XSo" secondAttribute="bottom" id="be6-gs-2E2"/>
+                <constraint firstItem="fnC-9Z-956" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="c6K-XF-2Yw"/>
+                <constraint firstItem="aaN-Fk-c4i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="nmM-rw-yET"/>
+                <constraint firstAttribute="trailing" secondItem="aaN-Fk-c4i" secondAttribute="trailing" constant="5" id="qJe-Au-Pey"/>
+            </constraints>
+            <size key="customSize" width="281" height="202"/>
+            <connections>
+                <outlet property="amountLabel" destination="0nk-Pe-XSo" id="jNK-bC-cEr"/>
+                <outlet property="cashBackLabel" destination="fnC-9Z-956" id="weG-Ww-V67"/>
+                <outlet property="logoContainer" destination="aaN-Fk-c4i" id="Mhu-Cd-km3"/>
+                <outlet property="logoImageView" destination="qro-vv-Xo6" id="wjm-Ep-LSe"/>
+            </connections>
+            <point key="canvasLocation" x="149" y="144"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="demoProduct" width="167" height="285"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="9Lo-wE-xoN" userLabel="JTSBannerView" customClass="JTSBannerView" customModule="Dinar_Back" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ZG4-ds-XtK" customClass="AsyncImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <color key="backgroundColor" red="1" green="0.83359375000000002" blue="0.010825892857142857" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="c3X-Gh-Nh9" appends="YES" id="1uk-87-dI2"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.83359375000000002" blue="0.010825892857142857" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZG4-ds-XtK" firstAttribute="top" secondItem="9Lo-wE-xoN" secondAttribute="top" id="CPu-nA-PeW"/>
+                <constraint firstAttribute="bottom" secondItem="ZG4-ds-XtK" secondAttribute="bottom" id="WyK-rL-2fa"/>
+                <constraint firstItem="ZG4-ds-XtK" firstAttribute="leading" secondItem="9Lo-wE-xoN" secondAttribute="leading" id="YGk-VA-VaI"/>
+                <constraint firstAttribute="trailing" secondItem="ZG4-ds-XtK" secondAttribute="trailing" id="tYw-Qc-cjS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerView" destination="ZG4-ds-XtK" id="omW-6t-sem"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+        <tapGestureRecognizer id="c3X-Gh-Nh9">
+            <connections>
+                <action selector="bannerTapped:" destination="9Lo-wE-xoN" id="kAT-ou-bqa"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

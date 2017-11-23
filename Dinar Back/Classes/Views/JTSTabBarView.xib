@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="Y5N-AK-8vk" customClass="JTSTabBarView" customModule="Dinar_Back" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sn-So-5kT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                    <subviews>
+                        <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL6-gg-uY5" customClass="JTSTabView" customModule="Dinar_Back" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="94" height="49"/>
+                            <subviews>
+                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="featuredNavIconInactive" highlightedImage="featuredNavIconActive" translatesAutoresizingMaskIntoConstraints="NO" id="Me5-de-jr6">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-zy-r5Q">
+                                    <rect key="frame" x="0.0" y="34" width="94" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="xRq-ve-Raa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="zfd-zy-r5Q" firstAttribute="top" secondItem="Me5-de-jr6" secondAttribute="bottom" id="986-b2-YIl"/>
+                                <constraint firstAttribute="trailing" secondItem="Me5-de-jr6" secondAttribute="trailing" id="MT8-um-VcT"/>
+                                <constraint firstAttribute="bottom" secondItem="Me5-de-jr6" secondAttribute="bottom" constant="15" id="Of4-ez-KUk"/>
+                                <constraint firstItem="zfd-zy-r5Q" firstAttribute="leading" secondItem="aL6-gg-uY5" secondAttribute="leading" id="dIz-CG-kGr"/>
+                                <constraint firstItem="Me5-de-jr6" firstAttribute="leading" secondItem="aL6-gg-uY5" secondAttribute="leading" id="e7S-b9-fT7"/>
+                                <constraint firstItem="Me5-de-jr6" firstAttribute="top" secondItem="aL6-gg-uY5" secondAttribute="top" id="lNi-6j-tfc"/>
+                                <constraint firstAttribute="trailing" secondItem="zfd-zy-r5Q" secondAttribute="trailing" id="sZa-as-A0m"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="imageView" destination="Me5-de-jr6" id="fx7-oS-B5b"/>
+                                <outlet property="titleLabel" destination="zfd-zy-r5Q" id="eyW-H0-EeC"/>
+                            </connections>
+                        </view>
+                        <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pTF-hK-UQx" customClass="JTSTabView" customModule="Dinar_Back" customModuleProvider="target">
+                            <rect key="frame" x="94" y="0.0" width="93.5" height="49"/>
+                            <subviews>
+                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchNavIconInactive" highlightedImage="searchNavIconActive" translatesAutoresizingMaskIntoConstraints="NO" id="0NK-q7-qkI">
+                                    <rect key="frame" x="0.0" y="0.0" width="93.5" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Offers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWH-ae-xoa">
+                                    <rect key="frame" x="0.0" y="34" width="93.5" height="13.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="Gre-Um-G6L"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="0NK-q7-qkI" firstAttribute="leading" secondItem="pTF-hK-UQx" secondAttribute="leading" id="G1e-oo-f0q"/>
+                                <constraint firstAttribute="bottom" secondItem="0NK-q7-qkI" secondAttribute="bottom" constant="15" id="MxU-HX-cTz"/>
+                                <constraint firstAttribute="trailing" secondItem="ZWH-ae-xoa" secondAttribute="trailing" id="PE4-Ba-Tpu"/>
+                                <constraint firstItem="ZWH-ae-xoa" firstAttribute="top" secondItem="0NK-q7-qkI" secondAttribute="bottom" id="ZX7-vO-ogg"/>
+                                <constraint firstAttribute="trailing" secondItem="0NK-q7-qkI" secondAttribute="trailing" id="eZj-st-xu4"/>
+                                <constraint firstItem="0NK-q7-qkI" firstAttribute="top" secondItem="pTF-hK-UQx" secondAttribute="top" id="ndD-8y-kgb"/>
+                                <constraint firstItem="ZWH-ae-xoa" firstAttribute="leading" secondItem="pTF-hK-UQx" secondAttribute="leading" id="z0K-wO-e2T"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="imageView" destination="0NK-q7-qkI" id="tJ0-wa-xCq"/>
+                                <outlet property="titleLabel" destination="ZWH-ae-xoa" id="fzW-DW-PoF"/>
+                            </connections>
+                        </view>
+                        <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hau-6d-qnY" customClass="JTSTabView" customModule="Dinar_Back" customModuleProvider="target">
+                            <rect key="frame" x="187.5" y="0.0" width="94" height="49"/>
+                            <subviews>
+                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myRebatesNavIconInactive" highlightedImage="myRebatesNavIconActive" translatesAutoresizingMaskIntoConstraints="NO" id="ON0-GY-Vjc">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Offers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJZ-wz-bzS">
+                                    <rect key="frame" x="0.0" y="34" width="94" height="13.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="3fc-zx-laI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="ON0-GY-Vjc" firstAttribute="top" secondItem="Hau-6d-qnY" secondAttribute="top" id="01f-rT-1lT"/>
+                                <constraint firstItem="cJZ-wz-bzS" firstAttribute="top" secondItem="ON0-GY-Vjc" secondAttribute="bottom" id="bwp-0g-JtI"/>
+                                <constraint firstAttribute="trailing" secondItem="cJZ-wz-bzS" secondAttribute="trailing" id="gxz-0S-VDS"/>
+                                <constraint firstAttribute="bottom" secondItem="ON0-GY-Vjc" secondAttribute="bottom" constant="15" id="hpK-7P-R3f"/>
+                                <constraint firstAttribute="trailing" secondItem="ON0-GY-Vjc" secondAttribute="trailing" id="oQg-dC-wfd"/>
+                                <constraint firstItem="ON0-GY-Vjc" firstAttribute="leading" secondItem="Hau-6d-qnY" secondAttribute="leading" id="ofD-Gr-EHl"/>
+                                <constraint firstItem="cJZ-wz-bzS" firstAttribute="leading" secondItem="Hau-6d-qnY" secondAttribute="leading" id="tEm-R5-dNR"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="imageView" destination="ON0-GY-Vjc" id="kpT-jj-aoz"/>
+                                <outlet property="titleLabel" destination="cJZ-wz-bzS" id="k8m-Ai-Vez"/>
+                            </connections>
+                        </view>
+                        <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXx-5r-umh" customClass="JTSTabView" customModule="Dinar_Back" customModuleProvider="target">
+                            <rect key="frame" x="281.5" y="0.0" width="93.5" height="49"/>
+                            <subviews>
+                                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accountNavIconInactive" highlightedImage="accountNavIconActive" translatesAutoresizingMaskIntoConstraints="NO" id="EVj-pg-Myt">
+                                    <rect key="frame" x="0.0" y="0.0" width="93.5" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-lp-DM0">
+                                    <rect key="frame" x="0.0" y="34" width="93.5" height="13.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="U53-1C-uDA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="10"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="EVj-pg-Myt" secondAttribute="trailing" id="8A4-Dm-YyL"/>
+                                <constraint firstAttribute="bottom" secondItem="EVj-pg-Myt" secondAttribute="bottom" constant="15" id="QYJ-hW-WWR"/>
+                                <constraint firstAttribute="trailing" secondItem="8GN-lp-DM0" secondAttribute="trailing" id="QfL-HH-5g8"/>
+                                <constraint firstItem="EVj-pg-Myt" firstAttribute="top" secondItem="KXx-5r-umh" secondAttribute="top" id="SIY-Xc-YZu"/>
+                                <constraint firstItem="EVj-pg-Myt" firstAttribute="leading" secondItem="KXx-5r-umh" secondAttribute="leading" id="ca2-2x-gcc"/>
+                                <constraint firstItem="8GN-lp-DM0" firstAttribute="leading" secondItem="KXx-5r-umh" secondAttribute="leading" id="lNN-8N-jPW"/>
+                                <constraint firstItem="8GN-lp-DM0" firstAttribute="top" secondItem="EVj-pg-Myt" secondAttribute="bottom" id="xz1-Go-vEC"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="imageView" destination="EVj-pg-Myt" id="HsZ-S4-Zb7"/>
+                                <outlet property="titleLabel" destination="8GN-lp-DM0" id="z1E-KN-Jmm"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="pTF-hK-UQx" firstAttribute="height" secondItem="aL6-gg-uY5" secondAttribute="height" id="1u4-dB-WZ5"/>
+                        <constraint firstItem="Hau-6d-qnY" firstAttribute="height" secondItem="aL6-gg-uY5" secondAttribute="height" id="6aj-Vh-kSI"/>
+                        <constraint firstItem="pTF-hK-UQx" firstAttribute="width" secondItem="aL6-gg-uY5" secondAttribute="width" id="LDf-Cf-Yv5"/>
+                        <constraint firstItem="KXx-5r-umh" firstAttribute="width" secondItem="aL6-gg-uY5" secondAttribute="width" id="LuT-HM-aPE"/>
+                        <constraint firstItem="KXx-5r-umh" firstAttribute="height" secondItem="aL6-gg-uY5" secondAttribute="height" id="sbu-CK-4sv"/>
+                        <constraint firstItem="Hau-6d-qnY" firstAttribute="width" secondItem="aL6-gg-uY5" secondAttribute="width" id="y2A-ea-jHt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3sn-So-5kT" firstAttribute="leading" secondItem="Y5N-AK-8vk" secondAttribute="leading" id="dma-oL-OO3"/>
+                <constraint firstAttribute="trailing" secondItem="3sn-So-5kT" secondAttribute="trailing" id="imm-S4-hzl"/>
+                <constraint firstAttribute="bottom" secondItem="3sn-So-5kT" secondAttribute="bottom" id="leq-y8-vHV"/>
+                <constraint firstItem="3sn-So-5kT" firstAttribute="top" secondItem="Y5N-AK-8vk" secondAttribute="top" id="wmF-JU-YJD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="tabs" destination="aL6-gg-uY5" collectionClass="NSMutableArray" id="n51-5R-AQu"/>
+                <outletCollection property="tabs" destination="pTF-hK-UQx" collectionClass="NSMutableArray" id="3cq-Nd-vhu"/>
+                <outletCollection property="tabs" destination="Hau-6d-qnY" collectionClass="NSMutableArray" id="cMH-AF-aTN"/>
+                <outletCollection property="tabs" destination="KXx-5r-umh" collectionClass="NSMutableArray" id="wf5-Bd-QcI"/>
+            </connections>
+            <point key="canvasLocation" x="-458.39999999999998" y="-246.9265367316342"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="accountNavIconActive" width="22" height="22"/>
+        <image name="accountNavIconInactive" width="22" height="22"/>
+        <image name="featuredNavIconActive" width="23" height="20"/>
+        <image name="featuredNavIconInactive" width="23" height="20"/>
+        <image name="myRebatesNavIconActive" width="22" height="22"/>
+        <image name="myRebatesNavIconInactive" width="22" height="22"/>
+        <image name="searchNavIconActive" width="22" height="22"/>
+        <image name="searchNavIconInactive" width="22" height="22"/>
+    </resources>
+</document>
